@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingOptionViewController">
+            <connections>
+                <outlet property="btnItem1" destination="Wh8-bL-XD0" id="F3c-HF-gsE"/>
+                <outlet property="btnItem2" destination="dn4-Uc-T6A" id="bDw-uQ-sJS"/>
+                <outlet property="btnItem3" destination="XqS-Q7-KqP" id="QSU-U1-r44"/>
+                <outlet property="btnItem4" destination="MRu-E5-BJa" id="5Bz-kh-F6c"/>
+                <outlet property="btnItem5" destination="kry-kR-jXq" id="cdl-FH-vIj"/>
+                <outlet property="lblItem1" destination="DLH-VY-Bv4" id="gGY-fe-ve0"/>
+                <outlet property="lblItem2" destination="sSg-g2-NzG" id="lPi-V1-kXt"/>
+                <outlet property="lblItem3" destination="zI9-uq-Wxf" id="Df4-bZ-3Ef"/>
+                <outlet property="lblItem4" destination="Dnc-bF-lV0" id="4iT-ms-mvf"/>
+                <outlet property="lblItem5" destination="cXk-z9-7Ib" id="8LP-uD-scV"/>
+                <outlet property="lblTitle" destination="qH4-cd-xgj" id="CEc-K3-2gu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewColor1" destination="rQN-h5-aFp" id="vFs-Ov-MNy"/>
+                <outlet property="viewColor2" destination="sO8-KS-jmt" id="Dpq-zM-cPw"/>
+                <outlet property="viewColor3" destination="cuG-D4-bY0" id="O18-I7-CZC"/>
+                <outlet property="viewColor4" destination="Xi8-lf-Mor" id="06F-3B-IaW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="452"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="setting_popup_bg.png" id="h23-oC-Qy6">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="452"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="학습반복 1단계" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qH4-cd-xgj" customClass="UILabelResizableBold">
+                    <rect key="frame" x="0.0" y="29" width="375" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Wh8-bL-XD0" userLabel="button1">
+                    <rect key="frame" x="29" y="95" width="317" height="47"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="setting_item_radio_n.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="setting_item_radio_d.png"/>
+                    <state key="highlighted" backgroundImage="setting_item_radio_d.png"/>
+                    <connections>
+                        <action selector="onClickOption:" destination="-1" eventType="touchUpInside" id="yCg-TG-FYt"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1회반복" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DLH-VY-Bv4" customClass="UILabelResizable">
+                    <rect key="frame" x="80" y="109" width="180" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dn4-Uc-T6A" userLabel="button2">
+                    <rect key="frame" x="29" y="143" width="317" height="47"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="setting_item_radio_n.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="setting_item_radio_d.png"/>
+                    <state key="highlighted" backgroundImage="setting_item_radio_d.png"/>
+                    <connections>
+                        <action selector="onClickOption:" destination="-1" eventType="touchUpInside" id="XZ2-s7-0cw"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2회반복" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sSg-g2-NzG" customClass="UILabelResizable">
+                    <rect key="frame" x="80" y="156" width="180" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" id="rQN-h5-aFp" userLabel="view_yellow">
+                    <rect key="frame" x="41" y="156" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XqS-Q7-KqP" userLabel="button3">
+                    <rect key="frame" x="29" y="191" width="317" height="47"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="setting_item_radio_n.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="setting_item_radio_d.png"/>
+                    <state key="highlighted" backgroundImage="setting_item_radio_d.png"/>
+                    <connections>
+                        <action selector="onClickOption:" destination="-1" eventType="touchUpInside" id="8g3-ma-uwP"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3회반복" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zI9-uq-Wxf" customClass="UILabelResizable">
+                    <rect key="frame" x="80" y="204" width="180" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" id="sO8-KS-jmt" userLabel="view_green">
+                    <rect key="frame" x="42" y="204" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MRu-E5-BJa" userLabel="button4">
+                    <rect key="frame" x="29" y="239" width="317" height="47"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="setting_item_radio_n.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="setting_item_radio_d.png"/>
+                    <state key="highlighted" backgroundImage="setting_item_radio_d.png"/>
+                    <connections>
+                        <action selector="onClickOption:" destination="-1" eventType="touchUpInside" id="OeD-jA-6O9"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4회반복" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dnc-bF-lV0" customClass="UILabelResizable">
+                    <rect key="frame" x="80" y="252" width="180" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" id="cuG-D4-bY0" userLabel="view_red">
+                    <rect key="frame" x="42" y="253" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kry-kR-jXq" userLabel="button5">
+                    <rect key="frame" x="29" y="287" width="317" height="47"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="setting_item_radio_n.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="setting_item_radio_d.png"/>
+                    <state key="highlighted" backgroundImage="setting_item_radio_d.png"/>
+                    <connections>
+                        <action selector="onClickOption:" destination="-1" eventType="touchUpInside" id="POc-Xa-RB9"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5회반복" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cXk-z9-7Ib" customClass="UILabelResizable">
+                    <rect key="frame" x="80" y="300" width="180" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" id="Xi8-lf-Mor" userLabel="view_blue">
+                    <rect key="frame" x="42" y="301" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7fP-gI-mxO" userLabel="btn_ok">
+                    <rect key="frame" x="56" y="373" width="99" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="ok_on.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="ok_off.png"/>
+                    <connections>
+                        <action selector="onClickBtnOK:" destination="-1" eventType="touchUpInside" id="RiK-Ue-Bgp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bsi-HJ-fp6" userLabel="btn_cancel">
+                    <rect key="frame" x="220" y="373" width="99" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="cancel_on.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="cancel_off.png"/>
+                    <connections>
+                        <action selector="onClickBtnCancel:" destination="-1" eventType="touchUpInside" id="p3r-Kk-Mx0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cancel_off.png" width="205" height="67"/>
+        <image name="cancel_on.png" width="205" height="67"/>
+        <image name="ok_off.png" width="205" height="67"/>
+        <image name="ok_on.png" width="205" height="67"/>
+        <image name="setting_item_radio_d.png" width="635" height="95"/>
+        <image name="setting_item_radio_n.png" width="635" height="95"/>
+        <image name="setting_popup_bg.png" width="750" height="905"/>
+    </resources>
+</document>

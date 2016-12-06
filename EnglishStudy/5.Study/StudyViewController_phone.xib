@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5053" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StudyViewController">
+            <connections>
+                <outlet property="btnTab1" destination="1oZ-Rm-esK" id="R06-Vp-hnW"/>
+                <outlet property="btnTab2" destination="Cq6-4v-ph5" id="dHB-Zg-hAy"/>
+                <outlet property="btnTab3" destination="4Vf-Mg-8gk" id="qD2-7O-NlS"/>
+                <outlet property="btnTab4" destination="1Fw-HN-8zz" id="iuJ-JL-4c6"/>
+                <outlet property="lblTab1" destination="sj6-ZV-frq" id="cwv-IW-DId"/>
+                <outlet property="lblTab2" destination="6LH-GZ-6TC" id="20B-qL-UmJ"/>
+                <outlet property="lblTab3" destination="stA-jn-BHh" id="zo0-5g-avi"/>
+                <outlet property="lblTab4" destination="gRa-ST-wrl" id="rVf-gT-Rid"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewTabBar" destination="mfF-E0-BaQ" id="Bva-pe-bgd"/>
+                <outlet property="viewTabContent" destination="rdl-0D-7EQ" id="wNQ-Ce-9tq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1136" height="640"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ph_bg_brown.png" id="6V8-fR-CdD" userLabel="background">
+                    <rect key="frame" x="0.0" y="-64" width="1136" height="768"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" id="mfF-E0-BaQ" userLabel="TabBar">
+                    <rect key="frame" x="80" y="40" width="701" height="72"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1Fw-HN-8zz" userLabel="Back Tab">
+                            <rect key="frame" x="430" y="0.0" width="204" height="72"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="ph_tab_yellow_n.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="ph_tab_yellow_d.png"/>
+                            <state key="highlighted" backgroundImage="ph_tab_yellow_d.png"/>
+                            <connections>
+                                <action selector="onToucnDownTabButton:" destination="-1" eventType="touchDown" id="fll-k2-bJQ"/>
+                                <action selector="onToucnDownTabButton:" destination="-1" eventType="touchDragInside" id="kUK-Nr-Vu4"/>
+                                <action selector="onToucnUpInsideTabButton:" destination="-1" eventType="touchUpInside" id="cgI-Aq-c6F"/>
+                                <action selector="onToucnUpOutsideTabButton:" destination="-1" eventType="touchDragOutside" id="3KA-89-tr7"/>
+                                <action selector="onToucnUpOutsideTabButton:" destination="-1" eventType="touchUpOutside" id="gsd-If-hhY"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나가기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gRa-ST-wrl" userLabel="나가기" customClass="UILabelResizableBold">
+                            <rect key="frame" x="523" y="16" width="100" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <color key="textColor" red="0.41176470590000003" green="0.1058823529" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Vf-Mg-8gk" userLabel="Result Tab">
+                            <rect key="frame" x="320" y="0.0" width="204" height="72"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="ph_tab_yellow_n.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="ph_tab_yellow_d.png"/>
+                            <state key="highlighted" backgroundImage="ph_tab_yellow_d.png"/>
+                            <connections>
+                                <action selector="onToucnDownTabButton:" destination="-1" eventType="touchDown" id="99x-as-hRm"/>
+                                <action selector="onToucnDownTabButton:" destination="-1" eventType="touchDragInside" id="VW3-Ka-cPf"/>
+                                <action selector="onToucnUpInsideTabButton:" destination="-1" eventType="touchUpInside" id="5TC-z3-8X3"/>
+                                <action selector="onToucnUpOutsideTabButton:" destination="-1" eventType="touchUpOutside" id="7gE-M3-OEV"/>
+                                <action selector="onToucnUpOutsideTabButton:" destination="-1" eventType="touchDragOutside" id="G3b-bm-5V0"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결과보기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="stA-jn-BHh" userLabel="결과보기" customClass="UILabelResizableBold">
+                            <rect key="frame" x="372" y="16" width="100" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <color key="textColor" red="0.41176470590000003" green="0.1058823529" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Cq6-4v-ph5" userLabel="Schedule Tab">
+                            <rect key="frame" x="160" y="0.0" width="204" height="72"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="ph_tab_yellow_n.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="ph_tab_yellow_d.png"/>
+                            <state key="highlighted" backgroundImage="ph_tab_yellow_d.png"/>
+                            <connections>
+                                <action selector="onToucnDownTabButton:" destination="-1" eventType="touchDragInside" id="BTM-60-vYQ"/>
+                                <action selector="onToucnDownTabButton:" destination="-1" eventType="touchDown" id="SeN-vz-hNO"/>
+                                <action selector="onToucnUpInsideTabButton:" destination="-1" eventType="touchUpInside" id="WIx-OX-Iy5"/>
+                                <action selector="onToucnUpOutsideTabButton:" destination="-1" eventType="touchDragOutside" id="IZL-79-jc3"/>
+                                <action selector="onToucnUpOutsideTabButton:" destination="-1" eventType="touchUpOutside" id="bfv-n0-5gj"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="일정보기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6LH-GZ-6TC" userLabel="일정보기" customClass="UILabelResizableBold">
+                            <rect key="frame" x="212" y="16" width="100" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <color key="textColor" red="0.41176470590000003" green="0.1058823529" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1oZ-Rm-esK" userLabel="Sel Level Tab">
+                            <rect key="frame" x="0.0" y="0.0" width="204" height="72"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="ph_tab_yellow_n.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="ph_tab_yellow_d.png"/>
+                            <state key="highlighted" backgroundImage="ph_tab_yellow_d.png"/>
+                            <connections>
+                                <action selector="onToucnDownTabButton:" destination="-1" eventType="touchDragInside" id="5zj-tl-b8W"/>
+                                <action selector="onToucnDownTabButton:" destination="-1" eventType="touchDown" id="W63-5m-aSE"/>
+                                <action selector="onToucnUpInsideTabButton:" destination="-1" eventType="touchUpInside" id="R05-b0-A2k"/>
+                                <action selector="onToucnUpOutsideTabButton:" destination="-1" eventType="touchDragOutside" id="22K-II-bJ3"/>
+                                <action selector="onToucnUpOutsideTabButton:" destination="-1" eventType="touchUpOutside" id="mUA-uj-frk"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="급수선택" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sj6-ZV-frq" userLabel="급수선택" customClass="UILabelResizableBold">
+                            <rect key="frame" x="52" y="16" width="100" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <color key="textColor" red="0.41176470588235292" green="0.10588235294117647" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="rdl-0D-7EQ" userLabel="TabContent">
+                    <rect key="frame" x="0.0" y="86" width="1136" height="554"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ph_bg_brown.png" width="2272" height="1280"/>
+        <image name="ph_tab_yellow_d.png" width="410" height="152"/>
+        <image name="ph_tab_yellow_n.png" width="411" height="145"/>
+    </resources>
+</document>

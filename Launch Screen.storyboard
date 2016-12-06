@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A201w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xoq-Fx-Whn"/>
+                        <viewControllerLayoutGuide type="bottom" id="nf0-iR-2Xk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="1136" height="640"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_athena_word.png" translatesAutoresizingMaskIntoConstraints="NO" id="jFe-Z3-T0B" userLabel="img_athena">
+                                <rect key="frame" x="460" y="100" width="300" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jFe-Z3-T0B" secondAttribute="height" multiplier="5:4" id="VK9-Jn-SLu"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.51764705879999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jFe-Z3-T0B" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="centerX" multiplier="0.81" id="Suu-do-foJ"/>
+                            <constraint firstItem="jFe-Z3-T0B" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.3125" id="aCD-fT-FTF"/>
+                            <constraint firstItem="jFe-Z3-T0B" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.264" id="l8z-e1-shc"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1136" height="640"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="347" y="334"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_athena_word.png" width="432" height="346"/>
+    </resources>
+</document>

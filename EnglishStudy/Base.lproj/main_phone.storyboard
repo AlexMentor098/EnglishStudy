@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="E9O-Zc-qtm">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="biC-jh-SP7">
+            <objects>
+                <viewController id="Prg-bW-fPL" customClass="SplashViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VQn-kK-6s1">
+                        <rect key="frame" x="0.0" y="0.0" width="1136" height="640"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" id="dLJ-fN-6cI">
+                                <rect key="frame" x="550" y="540" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_athena_word.png" id="lK9-TJ-g6I" userLabel="img_athena">
+                                <rect key="frame" x="460" y="100" width="300" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.51764705879999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CYo-S6-Ei3"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1136" height="640"/>
+                    <connections>
+                        <outlet property="viewLoading" destination="dLJ-fN-6cI" id="J8G-gr-gAs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zE1-nV-4x3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-185" y="-1840"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="cZi-Jk-saH">
+            <objects>
+                <viewController storyboardIdentifier="loginviewcontroller" id="paC-xL-fQz" customClass="LoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0GV-CS-CG6">
+                        <rect key="frame" x="0.0" y="0.0" width="1136" height="640"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_athena_word.png" id="fV5-vg-YvA" userLabel="img_athena">
+                                <rect key="frame" x="500" y="50" width="182" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="Asa-Ao-MOY" userLabel="view_content">
+                                <rect key="frame" x="306" y="230" width="500" height="312"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="Eah-Ma-QLg" userLabel="borderline">
+                                        <rect key="frame" x="0.0" y="60" width="500" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.75686274509999996" green="0.3921568627" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="X7p-PD-kH2" userLabel="email_view">
+                                        <rect key="frame" x="100" y="4" width="480" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_user_name.png" id="A3u-a7-KYS" userLabel="img_user">
+                                                <rect key="frame" x="7" y="4" width="35" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일" minimumFontSize="17" id="glH-C6-9Wr" userLabel="txt_email">
+                                                <rect key="frame" x="100" y="6" width="280" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.60392156862745094" green="0.30980392156862746" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="paC-xL-fQz" id="ZW9-vy-DBf"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="eYn-MF-ALF" userLabel="pass_view">
+                                        <rect key="frame" x="100" y="76" width="480" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_pass.png" id="MJM-mg-u4V" userLabel="img_pass">
+                                                <rect key="frame" x="13" y="8" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" minimumFontSize="17" id="uwc-fu-YOl" userLabel="txt_pass">
+                                                <rect key="frame" x="100" y="8" width="280" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.60392156862745094" green="0.30980392156862746" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="paC-xL-fQz" id="xfo-Bq-ZIL"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호를 잊으셨습니까?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xYA-RS-fWS" userLabel="forget_label" customClass="UILabelResizable">
+                                        <rect key="frame" x="93" y="263" width="280" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.81176470588235294" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" id="kal-VQ-Mpp" userLabel="underline">
+                                        <rect key="frame" x="92" y="284" width="230" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.81176470588235294" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NCX-IJ-92f" userLabel="btn_forget">
+                                        <rect key="frame" x="93" y="244" width="298" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onClickForget:" destination="paC-xL-fQz" eventType="touchUpInside" id="7ot-WY-SHg"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원가입" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bpU-OG-OkI" userLabel="register_label" customClass="UILabelResizable">
+                                        <rect key="frame" x="364" y="263" width="120" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.81176470588235294" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" id="O9Z-DE-xNF" userLabel="underline">
+                                        <rect key="frame" x="364" y="284" width="80" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.81176470588235294" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0Lg-CP-yuF" userLabel="btn_register">
+                                        <rect key="frame" x="366" y="244" width="82" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onClickRegister:" destination="paC-xL-fQz" eventType="touchUpInside" id="b4I-cA-EuK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="X9A-in-WPm" userLabel="btn_login">
+                                        <rect key="frame" x="140" y="160" width="240" height="54"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="btn_login.png"/>
+                                        <connections>
+                                            <action selector="onClickLogin:" destination="paC-xL-fQz" eventType="touchUpInside" id="LDg-sb-bDK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_cloud.png" id="q3i-Ev-uo6" userLabel="img_cloud">
+                                <rect key="frame" x="370" y="114" width="766" height="526"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="x8h-qx-lxT" userLabel="btn_facebook">
+                                <rect key="frame" x="1050" y="554" width="66" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="btn_facebook.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.51764705882352935" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bT4-kZ-KKP"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1136" height="640"/>
+                    <connections>
+                        <outlet property="btnFaceBook" destination="x8h-qx-lxT" id="aOZ-NG-RSw"/>
+                        <outlet property="btnForget" destination="NCX-IJ-92f" id="LFV-gb-DPB"/>
+                        <outlet property="btnRegister" destination="0Lg-CP-yuF" id="yDZ-x3-j2T"/>
+                        <outlet property="imgViewAthena" destination="fV5-vg-YvA" id="uqd-ad-G2F"/>
+                        <outlet property="imgViewCloud" destination="q3i-Ev-uo6" id="ZZN-bL-xuD"/>
+                        <outlet property="lblForget" destination="xYA-RS-fWS" id="Sf0-Gg-Hq9"/>
+                        <outlet property="lblRegister" destination="bpU-OG-OkI" id="yHV-Zo-tUd"/>
+                        <outlet property="txtEmail" destination="glH-C6-9Wr" id="zaR-sT-s9H"/>
+                        <outlet property="txtPass" destination="uwc-fu-YOl" id="cPC-ID-5Oc"/>
+                        <outlet property="viewContent" destination="Asa-Ao-MOY" id="E9b-Zq-Ryt"/>
+                        <outlet property="viewForgetUnderline" destination="kal-VQ-Mpp" id="Nxc-ST-TdQ"/>
+                        <outlet property="viewRegisterUnderline" destination="O9Z-DE-xNF" id="HSO-Xl-5eV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cNQ-r3-dyd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1501" y="-815"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="SLb-ni-hYD">
+            <objects>
+                <viewController storyboardIdentifier="profileviewcontroller" autoresizesArchivedViewToFullSize="NO" modalPresentationStyle="currentContext" id="Dj5-Y5-DQ8" customClass="ProfileViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ap7-M1-Yfs">
+                        <rect key="frame" x="0.0" y="0.0" width="460" height="560"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="74X-3v-aah" userLabel="btn_user_photo">
+                                <rect key="frame" x="178" y="40" width="105" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="icon_user_def2.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickUserPhoto:" destination="Dj5-Y5-DQ8" eventType="touchUpInside" id="Vdh-Me-SZx"/>
+                                    <action selector="onClickUserPhoto:" destination="2Ub-me-6g6" eventType="touchUpInside" id="pt0-eM-YV9"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_small_star_yellow.png" id="z0W-UE-jaZ" userLabel="img_star1">
+                                <rect key="frame" x="158" y="153" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_small_star_yellow.png" id="hqv-dd-YHU" userLabel="img_star2">
+                                <rect key="frame" x="188" y="153" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_small_star_yellow.png" id="NpG-jq-vk0" userLabel="img_star3">
+                                <rect key="frame" x="218" y="153" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_small_star_white.png" id="6zW-gM-u6E" userLabel="img_star4">
+                                <rect key="frame" x="246" y="153" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_small_star_white.png" id="Y8W-du-zN9" userLabel="img_star5">
+                                <rect key="frame" x="278" y="153" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="T5j-vY-3Z3" userLabel="btn_close_image">
+                                <rect key="frame" x="408" y="30" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="btn_cross_close.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZVB-L0-Fiu" userLabel="btn_close">
+                                <rect key="frame" x="380" y="0.0" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickClose:" destination="Dj5-Y5-DQ8" eventType="touchUpInside" id="QP6-IJ-rsd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hsm-cg-bNJ" userLabel="btn_change_psd">
+                                <rect key="frame" x="102" y="386" width="256" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="btn_change_psd.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickChangePassword:" destination="Dj5-Y5-DQ8" eventType="touchUpInside" id="DFc-To-JYX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ezs-69-0tZ" userLabel="btn_logout">
+                                <rect key="frame" x="102" y="465" width="256" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="btn_logout.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickLogout:" destination="Dj5-Y5-DQ8" eventType="touchUpInside" id="R8b-bL-0Md"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_user_name2.png" id="CJe-c3-hU5" userLabel="img_user_icon">
+                                <rect key="frame" x="92" y="208" width="36" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_alpha2.png" id="PId-Ei-MaH" userLabel="img_email">
+                                <rect key="frame" x="94" y="298" width="34" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3bL-cG-JUP" userLabel="lbl_email" customClass="UILabelResizable">
+                                <rect key="frame" x="152" y="299" width="200" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_chg_psd_underline.png" id="scy-rT-lb9" userLabel="img_border">
+                                <rect key="frame" x="22" y="342" width="425" height="4"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_chg_psd_underline.png" id="v1d-Ba-95y" userLabel="img_border">
+                                <rect key="frame" x="22" y="258" width="425" height="4"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="유저이름" minimumFontSize="17" id="84H-bZ-wJb" userLabel="txt_name">
+                                <rect key="frame" x="151" y="208" width="266" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2Ub-me-6g6" id="d0V-Zp-2X4"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="460" height="560"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="460" height="560"/>
+                    <connections>
+                        <outlet property="btnUserPhoto" destination="74X-3v-aah" id="ung-7K-2H9"/>
+                        <outlet property="imgViewStart1" destination="z0W-UE-jaZ" id="gHc-Ml-KgG"/>
+                        <outlet property="imgViewStart2" destination="hqv-dd-YHU" id="AJp-Pg-hyR"/>
+                        <outlet property="imgViewStart3" destination="NpG-jq-vk0" id="g10-28-XVm"/>
+                        <outlet property="imgViewStart4" destination="6zW-gM-u6E" id="0jc-JN-RxV"/>
+                        <outlet property="imgViewStart5" destination="Y8W-du-zN9" id="lhu-r1-gRy"/>
+                        <outlet property="lblEmail" destination="3bL-cG-JUP" id="MW3-8J-qL4"/>
+                        <outlet property="txtUsername" destination="84H-bZ-wJb" id="ro4-U0-Wh2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="asy-p0-aol" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5" y="152"/>
+        </scene>
+        <!--Psd Change View Controller-->
+        <scene sceneID="PVf-xc-m42">
+            <objects>
+                <viewController storyboardIdentifier="psdchangeviewcontroller" id="q3k-om-OiW" customClass="PsdChangeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B6o-2k-hn6">
+                        <rect key="frame" x="0.0" y="0.0" width="1136" height="640"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_cloud.png" id="in2-dT-s15" userLabel="img_cloud">
+                                <rect key="frame" x="370" y="114" width="766" height="526"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="UyY-TB-hzK" userLabel="view_content">
+                                <rect key="frame" x="318" y="144" width="500" height="248"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_alpha.png" id="1Xw-5J-tHU" userLabel="img_email">
+                                        <rect key="frame" x="94" y="18" width="34" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일" minimumFontSize="17" id="9Mh-E4-clL" userLabel="txt_email">
+                                        <rect key="frame" x="180" y="18" width="280" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="2Ub-me-6g6" id="cR0-SI-udQ"/>
+                                        </connections>
+                                    </textField>
+                                    <view contentMode="scaleToFill" id="kNt-CG-e2d" userLabel="borderline">
+                                        <rect key="frame" x="0.0" y="68" width="500" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.75686274509999996" green="0.3921568627" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_pass.png" id="TUq-O0-xmq" userLabel="img_pass">
+                                        <rect key="frame" x="96" y="92" width="30" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="새비밀번호" minimumFontSize="17" id="Pxx-vA-UF3" userLabel="txt_pass">
+                                        <rect key="frame" x="180" y="90" width="280" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="2Ub-me-6g6" id="D4M-cU-6mj"/>
+                                        </connections>
+                                    </textField>
+                                    <view contentMode="scaleToFill" id="89b-du-gNr" userLabel="borderline">
+                                        <rect key="frame" x="0.0" y="144" width="500" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.75686274509999996" green="0.3921568627" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_confirm_pass.png" id="VmU-cl-p5p" userLabel="img_confirm_pass">
+                                        <rect key="frame" x="96" y="164" width="32" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호확인" minimumFontSize="17" id="7yc-nD-N19" userLabel="txt_confirm_pass">
+                                        <rect key="frame" x="180" y="164" width="280" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="2Ub-me-6g6" id="hN3-cM-edI"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="t90-7b-h5e" userLabel="btn_back">
+                                <rect key="frame" x="50" y="60" width="48" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="btn_arrow_back.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickBack:" destination="2Ub-me-6g6" eventType="touchUpInside" id="Iri-Vl-buG"/>
+                                    <action selector="onClickBack:" destination="q3k-om-OiW" eventType="touchUpInside" id="K3s-QR-DQe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vyA-MO-I04" userLabel="btn_change_psd">
+                                <rect key="frame" x="443" y="416" width="250" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="btn_to_change_psd.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickChange:" destination="q3k-om-OiW" eventType="touchUpInside" id="OSc-XC-5fJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.51764705879999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1136" height="640"/>
+                    <connections>
+                        <outlet property="btnChagePsd" destination="vyA-MO-I04" id="z9L-QF-9HZ"/>
+                        <outlet property="txtConfirmPass" destination="7yc-nD-N19" id="EQs-id-FJY"/>
+                        <outlet property="txtEmail" destination="9Mh-E4-clL" id="AqL-KP-ImC"/>
+                        <outlet property="txtPass" destination="Pxx-vA-UF3" id="9xu-xr-WFe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hws-rr-vVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1295" y="327"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="65n-K1-w03">
+            <objects>
+                <viewController storyboardIdentifier="registerviewcontroller" id="2Ub-me-6g6" customClass="RegisterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q5H-RP-oSB">
+                        <rect key="frame" x="0.0" y="0.0" width="1136" height="640"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_cloud.png" id="iUY-Wz-g7W" userLabel="img_cloud">
+                                <rect key="frame" x="370" y="114" width="766" height="526"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="d0k-SJ-NJD" userLabel="view_content">
+                                <rect key="frame" x="326" y="200" width="500" height="248"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_user_name.png" id="QF4-d1-RdG" userLabel="img_email">
+                                        <rect key="frame" x="60" y="6" width="36" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="유저이름" minimumFontSize="17" id="Pvd-Gu-Yhb" userLabel="txt_name">
+                                        <rect key="frame" x="160" y="10" width="280" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="2Ub-me-6g6" id="157-Xb-zhX"/>
+                                        </connections>
+                                    </textField>
+                                    <view contentMode="scaleToFill" id="Uhm-p3-mbo" userLabel="borderline">
+                                        <rect key="frame" x="0.0" y="53" width="500" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.75686274509999996" green="0.3921568627" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_alpha.png" id="q5N-jX-LVV" userLabel="img_email">
+                                        <rect key="frame" x="62" y="72" width="34" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일" minimumFontSize="17" id="3LK-v8-mJi" userLabel="txt_email">
+                                        <rect key="frame" x="160" y="72" width="280" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="2Ub-me-6g6" id="HjQ-u5-msA"/>
+                                        </connections>
+                                    </textField>
+                                    <view contentMode="scaleToFill" id="YYo-7v-85s" userLabel="borderline">
+                                        <rect key="frame" x="0.0" y="118" width="500" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.75686274509999996" green="0.3921568627" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_pass.png" id="y7L-4C-cjR" userLabel="img_pass">
+                                        <rect key="frame" x="64" y="136" width="30" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" minimumFontSize="17" id="YsG-tC-zsB" userLabel="txt_pass">
+                                        <rect key="frame" x="160" y="136" width="280" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="2Ub-me-6g6" id="mQ8-OT-HEm"/>
+                                        </connections>
+                                    </textField>
+                                    <view contentMode="scaleToFill" id="17e-En-Yrx" userLabel="borderline">
+                                        <rect key="frame" x="0.0" y="182" width="500" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.75686274509999996" green="0.3921568627" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_confirm_pass.png" id="cof-db-isq" userLabel="img_confirm_pass">
+                                        <rect key="frame" x="64" y="196" width="31" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호확인" minimumFontSize="17" id="Dr5-mh-19V" userLabel="txt_confirm_pass">
+                                        <rect key="frame" x="160" y="196" width="280" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="2Ub-me-6g6" id="qYZ-cr-9Fs"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zv3-Pl-6yU" userLabel="btn_back">
+                                <rect key="frame" x="50" y="60" width="48" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="btn_arrow_back.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickBack:" destination="2Ub-me-6g6" eventType="touchUpInside" id="dR3-Yx-ahy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="smp-uh-fjr">
+                                <rect key="frame" x="516" y="69" width="105" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="icon_user_def_photo.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickUserPhoto:" destination="2Ub-me-6g6" eventType="touchUpInside" id="bd5-iU-IDc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5El-QN-cae" userLabel="btn_register">
+                                <rect key="frame" x="443" y="462" width="250" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="btn_register.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickRegister:" destination="2Ub-me-6g6" eventType="touchUpInside" id="zZV-iI-exf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.51764705879999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1136" height="640"/>
+                    <connections>
+                        <outlet property="btnUserPhoto" destination="smp-uh-fjr" id="atZ-Sp-rUj"/>
+                        <outlet property="imgViewCloud" destination="iUY-Wz-g7W" id="Nre-Vc-zkh"/>
+                        <outlet property="txtConfirmPass" destination="Dr5-mh-19V" id="6wH-1g-Vcm"/>
+                        <outlet property="txtEmail" destination="3LK-v8-mJi" id="7fM-LR-tmx"/>
+                        <outlet property="txtPass" destination="YsG-tC-zsB" id="UBa-yB-Loq"/>
+                        <outlet property="txtUserName" destination="Pvd-Gu-Yhb" id="4fx-cV-DIT"/>
+                        <outlet property="viewContent" destination="d0k-SJ-NJD" id="3Wb-6W-o1p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0K5-0i-XdQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-91" y="-822"/>
+        </scene>
+        <!--Navigation Controller Ex-->
+        <scene sceneID="4KW-Ho-mps">
+            <objects>
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="E9O-Zc-qtm" customClass="UINavigationControllerEx" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1136" height="640"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UJO-8j-zWS">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Prg-bW-fPL" kind="relationship" relationship="rootViewController" id="9yJ-FO-pwJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kbd-L1-BaX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1541" y="-1840"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="mainviewcontroller" id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1136" height="640"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_bg.png" id="JMO-q6-EnB" userLabel="main_bg">
+                                <rect key="frame" x="0.0" y="0.0" width="1136" height="640"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="o1X-QX-k19" userLabel="profile_view">
+                                <rect key="frame" x="-46" y="32" width="228" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_profile_bg.png" id="69a-bj-8vT" userLabel="profile_bg">
+                                        <rect key="frame" x="0.0" y="0.0" width="228" height="104"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_star.png" id="55C-UT-PHa" userLabel="star_icon">
+                                        <rect key="frame" x="67" y="60" width="25" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Z9X-8m-Jme" userLabel="btn_user_photo">
+                                        <rect key="frame" x="125" y="5" width="98" height="98"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="main_user_reg_on.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="main_user_reg_off.png"/>
+                                        <connections>
+                                            <action selector="onClickUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vSz-qN-lT7"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="김똘똘" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="907-lg-XHa" userLabel="user_name" customClass="UILabelResizableBold">
+                                        <rect key="frame" x="48" y="23" width="80" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="z4o-da-7lr" userLabel="user_level" customClass="UILabelResizableBold">
+                                        <rect key="frame" x="87" y="59" width="35" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rBN-0P-iFa">
+                                        <rect key="frame" x="52" y="18" width="72" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onClickProfile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iFA-cH-gLC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5k2-cB-Yfm" userLabel="btn_help">
+                                <rect key="frame" x="790" y="33" width="144" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="main_help_on.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="main_help_off.png"/>
+                                <connections>
+                                    <action selector="onClickHelp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8FH-iQ-3Xf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9Kl-WB-R1P" userLabel="btn_setting">
+                                <rect key="frame" x="956" y="33" width="144" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="main_setting_on.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="main_setting_off.png"/>
+                                <connections>
+                                    <action selector="onClickSetting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QMA-jH-Iq5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bZr-UM-ame" userLabel="btn_study">
+                                <rect key="frame" x="170" y="143" width="322" height="232"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="btn_main_study.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickStudy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fSR-5b-fAz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="onZ-md-Le3" userLabel="btn_result">
+                                <rect key="frame" x="650" y="144" width="287" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="btn_main_result.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iqh-8c-22G"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="00E-3D-kBv" userLabel="word_view">
+                                <rect key="frame" x="283" y="458" width="187" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_dic_bg.png" id="0qt-mD-7OV" userLabel="word_bg">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="195"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mMe-bG-gfu" userLabel="btn_words">
+                                        <rect key="frame" x="8" y="6" width="136" height="136"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="main_word_on.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="main_word_off.png"/>
+                                        <connections>
+                                            <action selector="onClickWords:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BAf-Rz-JB4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="lO3-cD-cMj" userLabel="cal_view">
+                                <rect key="frame" x="718" y="458" width="187" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_dic_bg.png" id="HcO-Xj-6Lx" userLabel="calendar_bg">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="195"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_calendar.png" id="jG3-hL-WN2" userLabel="calendar">
+                                        <rect key="frame" x="12" y="0.0" width="128" height="139"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6월" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iyq-Nu-xlM" userLabel="lbl_month" customClass="UILabelResizable">
+                                        <rect key="frame" x="9" y="20" width="131" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" id="7Pj-jb-LC1" userLabel="view_day">
+                                        <rect key="frame" x="13" y="60" width="123" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GmY-lB-aSY"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1136" height="640"/>
+                    <connections>
+                        <outlet property="btnHelp" destination="5k2-cB-Yfm" id="heS-fB-fQ4"/>
+                        <outlet property="btnResult" destination="onZ-md-Le3" id="aLG-By-gCe"/>
+                        <outlet property="btnSetting" destination="9Kl-WB-R1P" id="uak-DM-BDd"/>
+                        <outlet property="btnStudy" destination="bZr-UM-ame" id="bvz-5V-HJD"/>
+                        <outlet property="btnUserPhoto" destination="Z9X-8m-Jme" id="BXr-bW-SsY"/>
+                        <outlet property="lblDay" destination="7Pj-jb-LC1" id="LGD-Nd-k18"/>
+                        <outlet property="lblMonth" destination="iyq-Nu-xlM" id="xbo-U2-bMW"/>
+                        <outlet property="lblStarRate" destination="z4o-da-7lr" id="cCN-F1-l2w"/>
+                        <outlet property="lblUserName" destination="907-lg-XHa" id="0ET-Iw-yAC"/>
+                        <outlet property="viewCalendar" destination="lO3-cD-cMj" id="6zC-TR-I8x"/>
+                        <outlet property="viewProfile" destination="o1X-QX-k19" id="ApD-Q0-DcM"/>
+                        <outlet property="viewWord" destination="00E-3D-kBv" id="zxy-o8-f6j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1310" y="-809"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_chg_psd_underline.png" width="851" height="5"/>
+        <image name="bg_cloud.png" width="1533" height="1052"/>
+        <image name="btn_arrow_back.png" width="96" height="94"/>
+        <image name="btn_change_psd.png" width="443" height="103"/>
+        <image name="btn_cross_close.png" width="44" height="44"/>
+        <image name="btn_facebook.png" width="131" height="131"/>
+        <image name="btn_login.png" width="500" height="118"/>
+        <image name="btn_logout.png" width="443" height="103"/>
+        <image name="btn_main_result.png" width="575" height="460"/>
+        <image name="btn_main_study.png" width="645" height="465"/>
+        <image name="btn_register.png" width="501" height="119"/>
+        <image name="btn_to_change_psd.png" width="501" height="119"/>
+        <image name="icon_alpha.png" width="68" height="67"/>
+        <image name="icon_alpha2.png" width="52" height="52"/>
+        <image name="icon_athena_word.png" width="432" height="346"/>
+        <image name="icon_confirm_pass.png" width="62" height="67"/>
+        <image name="icon_pass.png" width="62" height="59"/>
+        <image name="icon_small_star_white.png" width="41" height="39"/>
+        <image name="icon_small_star_yellow.png" width="41" height="39"/>
+        <image name="icon_user_def2.png" width="210" height="210"/>
+        <image name="icon_user_def_photo.png" width="210" height="210"/>
+        <image name="icon_user_name.png" width="71" height="74"/>
+        <image name="icon_user_name2.png" width="51" height="53"/>
+        <image name="main_bg.png" width="2048" height="1536"/>
+        <image name="main_calendar.png" width="252" height="282"/>
+        <image name="main_dic_bg.png" width="374" height="389"/>
+        <image name="main_help_off.png" width="243" height="81"/>
+        <image name="main_help_on.png" width="243" height="81"/>
+        <image name="main_profile_bg.png" width="456" height="207"/>
+        <image name="main_setting_off.png" width="243" height="81"/>
+        <image name="main_setting_on.png" width="243" height="81"/>
+        <image name="main_star.png" width="50" height="52"/>
+        <image name="main_user_reg_off.png" width="136" height="136"/>
+        <image name="main_user_reg_on.png" width="136" height="136"/>
+        <image name="main_word_off.png" width="263" height="261"/>
+        <image name="main_word_on.png" width="263" height="261"/>
+    </resources>
+</document>

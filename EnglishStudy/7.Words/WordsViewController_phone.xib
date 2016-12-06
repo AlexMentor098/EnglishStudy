@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5053" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WordsViewController">
+            <connections>
+                <outlet property="btnSortName" destination="93F-Xg-HDj" id="LPI-7Y-RMn"/>
+                <outlet property="btnSortRegister" destination="qdz-tq-9nD" id="2zj-P7-FdR"/>
+                <outlet property="btnTab1" destination="1oZ-Rm-esK" id="R06-Vp-hnW"/>
+                <outlet property="btnTab2" destination="Cq6-4v-ph5" id="dHB-Zg-hAy"/>
+                <outlet property="btnTab3" destination="4Vf-Mg-8gk" id="qD2-7O-NlS"/>
+                <outlet property="btnTab4" destination="1Fw-HN-8zz" id="iuJ-JL-4c6"/>
+                <outlet property="imgViewWordAll" destination="G5p-rK-UtZ" id="dCq-0v-U1J"/>
+                <outlet property="lblPage" destination="qOW-lr-TvS" id="e4g-A0-aFP"/>
+                <outlet property="tblViewContent" destination="pzI-0f-pqu" id="wbn-HO-q5z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewTabContent" destination="rdl-0D-7EQ" id="wNQ-Ce-9tq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1136" height="640"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_black.png" id="6V8-fR-CdD" userLabel="background">
+                    <rect key="frame" x="-40" y="-80" width="1216" height="800"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" id="rdl-0D-7EQ" userLabel="TabContent">
+                    <rect key="frame" x="0.0" y="86" width="1136" height="554"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ph_bg_paper.png" id="iji-k9-9gO" userLabel="background">
+                            <rect key="frame" x="0.0" y="0.0" width="1136" height="554"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_word_on.png" id="vui-nA-qSj" userLabel="icon_word">
+                            <rect key="frame" x="111" y="271" width="132" height="132"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="93F-Xg-HDj" userLabel="sort_alphabet">
+                            <rect key="frame" x="906" y="103" width="188" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="ph_btn_word_alpha_n.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="ph_btn_word_alpha_d.png"/>
+                            <state key="highlighted" backgroundImage="ph_btn_word_alpha_d.png"/>
+                            <connections>
+                                <action selector="onClickSortName:" destination="-1" eventType="touchUpInside" id="sCs-F6-7eC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qdz-tq-9nD" userLabel="sort_register">
+                            <rect key="frame" x="906" y="183" width="188" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="ph_btn_word_register_n.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="ph_btn_word_register_d.png"/>
+                            <state key="highlighted" backgroundImage="ph_btn_word_register_d.png"/>
+                            <connections>
+                                <action selector="onClickSortRegister:" destination="-1" eventType="touchUpInside" id="mEW-PV-QpW"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BwJ-DY-Ofp" userLabel="delete button">
+                            <rect key="frame" x="906" y="343" width="188" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="ph_btn_word_del_n.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="ph_btn_word_del_d.png"/>
+                        </button>
+                        <view contentMode="scaleToFill" id="g3E-bl-yna" userLabel="btn_filter">
+                            <rect key="frame" x="906" y="263" width="188" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ph_btn_word_lang_all.png" id="G5p-rK-UtZ" userLabel="words_all">
+                                    <rect key="frame" x="0.0" y="0.0" width="188" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4OH-aC-Yfu" userLabel="btn_eng">
+                                    <rect key="frame" x="-2" y="0.0" width="63" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onClickFilterEng:" destination="-1" eventType="touchDown" id="P9z-R4-bOj"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6UV-dN-YT3" userLabel="btn_all">
+                                    <rect key="frame" x="55" y="0.0" width="81" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onClickFilterAll:" destination="-1" eventType="touchDown" id="fvj-s3-YXo"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="x1t-My-Lz9" userLabel="btn_kr">
+                                    <rect key="frame" x="129" y="0.0" width="63" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onClickFilterKor:" destination="-1" eventType="touchDown" id="00x-gL-dkb"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qOW-lr-TvS" customClass="UILabelResizableBold">
+                            <rect key="frame" x="556" y="488" width="98" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Twi-jJ-mk8" userLabel="btn_left">
+                            <rect key="frame" x="484" y="464" width="80" height="80"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="ph_btn_left_n.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="ph_btn_left_d.png"/>
+                            <connections>
+                                <action selector="onClickPrev:" destination="-1" eventType="touchUpInside" id="Sgx-Ph-wfK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NC8-Pg-kbG" userLabel="btn_right">
+                            <rect key="frame" x="646" y="464" width="80" height="80"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="ph_btn_right_n.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="ph_btn_right_d.png"/>
+                            <connections>
+                                <action selector="onClickNext:" destination="-1" eventType="touchUpInside" id="Ffp-Eq-faQ"/>
+                            </connections>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="pzI-0f-pqu">
+                            <rect key="frame" x="349" y="16" width="512" height="444"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="mfF-E0-BaQ" userLabel="TabBar">
+                    <rect key="frame" x="0.0" y="53" width="350" height="340"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1Fw-HN-8zz" userLabel="Back Tab">
+                            <rect key="frame" x="0.0" y="186" width="91" height="99"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="btn_word_back_n.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="btn_word_back_d.png"/>
+                            <connections>
+                                <action selector="onToucnDownTabButton:" destination="-1" eventType="touchDown" id="fll-k2-bJQ"/>
+                                <action selector="onToucnUpInsideTabButton:" destination="-1" eventType="touchUpInside" id="cgI-Aq-c6F"/>
+                                <action selector="onToucnUpOutsideTabButton:" destination="-1" eventType="touchUpOutside" id="gsd-If-hhY"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="word_tab_bar.png" id="sSy-ej-KVo" userLabel="tabbar_bg">
+                            <rect key="frame" x="0.0" y="0.0" width="95" height="226"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Vf-Mg-8gk" userLabel="Tab3">
+                            <rect key="frame" x="89" y="128" width="217" height="82"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="btn_word_all_n.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="btn_word_all_d.png"/>
+                            <state key="highlighted" backgroundImage="btn_word_all_d.png"/>
+                            <connections>
+                                <action selector="onToucnDownTabButton:" destination="-1" eventType="touchDown" id="99x-as-hRm"/>
+                                <action selector="onToucnUpInsideTabButton:" destination="-1" eventType="touchUpInside" id="5TC-z3-8X3"/>
+                                <action selector="onToucnUpOutsideTabButton:" destination="-1" eventType="touchUpOutside" id="7gE-M3-OEV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Cq6-4v-ph5" userLabel="Tab2">
+                            <rect key="frame" x="89" y="68" width="217" height="66"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="btn_word_import_n.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="btn_word_import_d.png"/>
+                            <state key="highlighted" backgroundImage="btn_word_import_d.png"/>
+                            <connections>
+                                <action selector="onToucnDownTabButton:" destination="-1" eventType="touchDown" id="SeN-vz-hNO"/>
+                                <action selector="onToucnUpInsideTabButton:" destination="-1" eventType="touchUpInside" id="WIx-OX-Iy5"/>
+                                <action selector="onToucnUpOutsideTabButton:" destination="-1" eventType="touchUpOutside" id="bfv-n0-5gj"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1oZ-Rm-esK" userLabel="Tab1">
+                            <rect key="frame" x="89" y="6" width="217" height="64"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="btn_word_wrong_n.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" backgroundImage="btn_word_wrong_d.png"/>
+                            <state key="highlighted" backgroundImage="btn_word_wrong_d.png"/>
+                            <connections>
+                                <action selector="onToucnDownTabButton:" destination="-1" eventType="touchDown" id="W63-5m-aSE"/>
+                                <action selector="onToucnUpInsideTabButton:" destination="-1" eventType="touchUpInside" id="R05-b0-A2k"/>
+                                <action selector="onToucnUpOutsideTabButton:" destination="-1" eventType="touchUpOutside" id="mUA-uj-frk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_black.png" width="2048" height="1536"/>
+        <image name="btn_word_all_d.png" width="326" height="120"/>
+        <image name="btn_word_all_n.png" width="326" height="120"/>
+        <image name="btn_word_back_d.png" width="139" height="149"/>
+        <image name="btn_word_back_n.png" width="139" height="149"/>
+        <image name="btn_word_import_d.png" width="326" height="96"/>
+        <image name="btn_word_import_n.png" width="326" height="96"/>
+        <image name="btn_word_wrong_d.png" width="326" height="96"/>
+        <image name="btn_word_wrong_n.png" width="326" height="96"/>
+        <image name="main_word_on.png" width="263" height="261"/>
+        <image name="ph_bg_paper.png" width="2272" height="1108"/>
+        <image name="ph_btn_left_d.png" width="93" height="92"/>
+        <image name="ph_btn_left_n.png" width="93" height="92"/>
+        <image name="ph_btn_right_d.png" width="93" height="92"/>
+        <image name="ph_btn_right_n.png" width="93" height="92"/>
+        <image name="ph_btn_word_alpha_d.png" width="327" height="104"/>
+        <image name="ph_btn_word_alpha_n.png" width="327" height="104"/>
+        <image name="ph_btn_word_del_d.png" width="327" height="104"/>
+        <image name="ph_btn_word_del_n.png" width="327" height="104"/>
+        <image name="ph_btn_word_lang_all.png" width="327" height="104"/>
+        <image name="ph_btn_word_register_d.png" width="327" height="104"/>
+        <image name="ph_btn_word_register_n.png" width="327" height="104"/>
+        <image name="word_tab_bar.png" width="145" height="339"/>
+    </resources>
+</document>
